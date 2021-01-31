@@ -41,7 +41,9 @@ input[type="radio"].visually-hidden {
 
     white-space: nowrap;
 
-    clip-path: inset(100%);
+    -webkit-clip-path: inset(100%);
+
+            clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
@@ -103,24 +105,42 @@ input[type="radio"].visually-hidden {
     line-height: 20px;
     color: #fff;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .inner-page .main-navigation {
-    align-items: flex-start;
-    flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 
 .main-header-logo {
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
     width: 368px;
     height: 153px;
 }
 
 .inner-page .main-header-logo {
-    order: 0;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
 
     width: 111px;
     height: 24px;
@@ -135,18 +155,27 @@ input[type="radio"].visually-hidden {
 }
 
 .main-navigation-wrapper .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .site-navigation {
     width: 620px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .user-navigation {
     max-width: 140px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
 }
@@ -230,8 +259,12 @@ input[type="radio"].visually-hidden {
 
 .features-list {
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 0;
     padding: 0;
 }
@@ -261,7 +294,9 @@ input[type="radio"].visually-hidden {
     margin-left: -10px;
 
     background: #fff;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 
 .feature-item p {
@@ -269,8 +304,12 @@ input[type="radio"].visually-hidden {
 }
 
 .index-columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 50px 80px;
     margin-bottom: 35px;
 
@@ -337,7 +376,8 @@ input[type="radio"].visually-hidden {
 }
 
 .gallery-button {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     position: absolute;
     bottom: 0;
 
@@ -372,9 +412,14 @@ input[type="radio"].visually-hidden {
 }
 
 .appointment-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .appointment-item {
@@ -390,7 +435,8 @@ input[type="radio"].visually-hidden {
 }
 
 .appointment-item input {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width: 140px;
     padding: 8px 15px 7px;
     font: inherit;
@@ -419,9 +465,14 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -445,7 +496,9 @@ input[type="radio"].visually-hidden {
     width: 8px;
     height: 8px;
     background-color: #000;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 
 .breadcrumbs li:last-child::after {
@@ -466,8 +519,12 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .filters {
@@ -572,8 +629,11 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 0;
     margin: 0;
     margin-bottom: 25px;
@@ -585,24 +645,33 @@ input[type="radio"].visually-hidden {
     margin-bottom: 20px;
     margin-right: 20px;
     background-color: #f8f8f8;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .catalog-item:nth-child(3n) {
     margin-right: 0;
 }
 
 .catalog-item:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .catalog-item a {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     color: #000;
 }
 
 .catalog-item h3 {
-    order: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
     margin: 17px 15px 12px 16px;
     font-size: 14px;
     line-height: 18px;
@@ -620,6 +689,8 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 15px;
     margin-top: 0;
@@ -644,8 +715,11 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -691,6 +765,8 @@ input[type="radio"].visually-hidden {
 }
 
 .product-photo-preview {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0;
     padding: 0;
@@ -701,7 +777,8 @@ input[type="radio"].visually-hidden {
     width: 140px;
     height: 149px;
     margin-right: 20px;
-    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
 }
 
 .product-photo-preview li:nth-child(3n) {
@@ -713,12 +790,17 @@ input[type="radio"].visually-hidden {
     height: 498px;
     margin: 0;
     margin-bottom: 20px;
-    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
 }
 
 .product-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
     padding-right: 10px;
     margin-bottom: 29px;
@@ -740,7 +822,8 @@ input[type="radio"].visually-hidden {
     text-align: center;
 
     background-color: #e5e5e5;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .product-price .button {
@@ -769,6 +852,8 @@ input[type="radio"].visually-hidden {
 }
 
 .product-info .product-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 63px;
 }
@@ -793,7 +878,9 @@ input[type="radio"].visually-hidden {
     width: 8px;
     height: 8px;
     background-color: #000;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 
 .inner-content {
@@ -832,8 +919,12 @@ input[type="radio"].visually-hidden {
 }
 
 .inner-content .big-heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 48px;
     margin-top: 55px;
     margin-bottom: 65px;
@@ -844,8 +935,11 @@ input[type="radio"].visually-hidden {
 .big-heading::before,
 .big-heading::after {
     content: "";
-    flex-grow: 1;
-    flex-shrink: 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     width: 50px;
     height: 2px;
     background: #000;
@@ -879,7 +973,9 @@ input[type="radio"].visually-hidden {
     width: 8px;
     height: 8px;
     background-color: #000;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 
 .custom-table-1 {
@@ -895,9 +991,14 @@ input[type="radio"].visually-hidden {
 }
 
 .inner-columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: 60px 0;
 }
 
@@ -944,6 +1045,8 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -968,9 +1071,14 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-social ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 141px;
     list-style: none;
     margin: 0 auto;
@@ -983,9 +1091,15 @@ input[type="radio"].visually-hidden {
 }
 
 .social-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 43px;
     height: 43px;
     background-color: #000;
@@ -1033,7 +1147,8 @@ input[type="radio"].visually-hidden {
     background-image: url(../img/pattern-light.jpg);
     background-position: 0 0;
     background-repeat: repeat;
-    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+            box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
     /* z-index: 2; */
 }
 
@@ -1079,11 +1194,15 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-close::before {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 
 .modal-close::after {
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
 }
 
 .modal h2 {
@@ -1105,7 +1224,8 @@ input[type="radio"].visually-hidden {
 
 .login-form input[type="text"],
 .login-form input[type="password"] {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width: 300px;
     padding: 10px 15px;
     padding-right: 40px;
@@ -1122,9 +1242,14 @@ input[type="radio"].visually-hidden {
 }
 
 .login-form .login-help {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 15px 0;
 }
 
@@ -1178,11 +1303,15 @@ input[type="radio"].visually-hidden {
 }
 
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
 }
 
 .restore {
@@ -1213,7 +1342,6 @@ input[type="radio"].visually-hidden {
 .modal-map p {
     margin: 0;
 }
-
 
 
 
