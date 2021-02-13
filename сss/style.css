@@ -1343,6 +1343,9 @@ input[type="radio"].visually-hidden {
     margin: 0;
 }
 
+.modal-show {
+    display: block;
+}
 
 
 
